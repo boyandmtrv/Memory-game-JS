@@ -68,7 +68,36 @@ const timeGenerator = () => {
     let minutesValue = minutes < 10 ? `0${minutes}` : minutes;
 
     timeValue.innerHTML = `<span>Time:</span>${minutesValue}:${secondsValue}`;
-    
 };
+
+const movesCounter = () => {
+    movesCount += 1;
+    moves.innerHTML = `<span>Moves:</span>${movesCount}`;
+};
+
+const generateRandom = (size = 4) => {
+    let tempArr = [...items];
+    let cardValues = [];
+    size = (size * size) / 2;
+
+    for (let i = 0; i < size; i++) {
+        const randomIndex = Math.floor(Math.random() * tempArr.length);
+        cardValues.push(tempArr[randomIndex]);
+        tempArr.splice(randomIndex, 1);
+    }
+    return cardValues;
+}
+
+const matrixGenerator = (cardValues, size = 4) => {
+    gameContainer.innerHTML = "";
+    cardValues = [...cardValues, ...cardValues];
+    cardValues.sort(() => Math.random() - 0.5);
+
+    for (let i = 0; i < size * size; i++) {
+        
+    }
+}
+
+
 
 
