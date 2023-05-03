@@ -13,40 +13,40 @@ let secondCard = false;
 
 const items = [
     {
-        name: 'bug', image: '/img/bugIMG.png'
+        name: 'bug', image: './img/bugIMG.png'
     },
     {
-        name: 'building', image: '/img/buildingIMG.png'
+        name: 'building', image: './img/buildingIMG.png'
     },
     {
-        name: 'chat', image: '/img/chatIMG.png'
+        name: 'chat', image: './img/chatIMG.png'
     },
     {
-        name: 'diamond', image: '/img/diamondIMG.png'
+        name: 'diamond', image: './img/diamondIMG.png'
     },
     {
-        name: 'emoji', image: '/img/emojiIMG.png'
+        name: 'emoji', image: './img/emojiIMG.png'
     },
     {
-        name: 'heart', image: '/img/heartIMG.png'
+        name: 'heart', image: './img/heartIMG.png'
     },
     {
-        name: 'javascript', image: '/img/javascriptIMG.png'
+        name: 'javascript', image: './img/javascriptIMG.png'
     },
     {
-        name: 'mail', image: '/img/mailIMG.png'
+        name: 'mail', image: './img/mailIMG.png'
     },
     {
-        name: 'map', image: '/img/mapIMG.png'
+        name: 'map', image: './img/mapIMG.png'
     },
     {
-        name: 'moon', image: '/img/moonIMG.png'
+        name: 'moon', image: './img/moonIMG.png'
     },
     {
-        name: 'ruler', image: '/img/rulerIMG.png'
+        name: 'ruler', image: './img/rulerIMG.png'
     },
     {
-        name: 'sun', image: '/img/sunIMG.png'
+        name: 'sun', image: './img/sunIMG.png'
     },
 ];
 
