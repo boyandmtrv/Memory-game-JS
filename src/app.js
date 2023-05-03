@@ -103,8 +103,28 @@ const matrixGenerator = (cardValues, size = 4) => {
         `
     };
 
-    gameContainer.style.gridTemplateColumns = `repeat(${size}, auto)`
-    
+    gameContainer.style.gridTemplateColumns = `repeat(${size}, auto)`;
+
+    cards = document.querySelectorAll('.card-container');
+    cards.forEach((card) => {
+        card.addEventListener('click', () => {
+            if (!card.classList.contains('matched')) {
+                card.classList.add('flipped');
+                if (!firstCard) {
+                    firstCard = card;
+                    firstCardValue = card.getAttribute('data-card-value');
+                };
+            } else {
+                movesCounter();
+                secondCard = card;
+                let secondCardValue = card.getAttribute('data-card-value');
+                if (firstCardValue == secondCardValue) {
+                    
+                }
+            };
+        
+        });
+    });
 };
 
 const initializer = () => {
