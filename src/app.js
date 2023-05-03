@@ -94,9 +94,24 @@ const matrixGenerator = (cardValues, size = 4) => {
     cardValues.sort(() => Math.random() - 0.5);
 
     for (let i = 0; i < size * size; i++) {
-        
+        gameContainer.innerHTML += `
+            <div class="card-container" data-card-value = "${cardValues[i].name}">  
+                <div class="card-before">?</div>
+                <div class="card-after">
+                <img src = "${cardValues[i].image}" class="image"/></div>
+            </div>
+        `
     }
-}
+};
+
+const initializer = () => {
+    result.innerText = "";
+    winCount = 0;
+    let cardValues = generateRandom();
+    console.log(cardValues);
+    matrixGenerator(cardValues);
+};
+initializer();
 
 
 
