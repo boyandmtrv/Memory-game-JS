@@ -101,7 +101,10 @@ const matrixGenerator = (cardValues, size = 4) => {
                 <img src = "${cardValues[i].image}" class="image"/></div>
             </div>
         `
-    }
+    };
+
+    gameContainer.style.gridTemplateColumns = `repeat(${size}, auto)`
+    
 };
 
 const initializer = () => {
