@@ -8,7 +8,7 @@
 
 
 ## About The Project
-![memorygame](https://github.com/boyandmtrv/Mobile-First-Memory-Game-JS/assets/122356573/2235f9b9-e4c5-4b4f-be78-9f40062d8512)
+![memorygame](https://github.com/boyandmtrv/Mobile-First-Memory-Game-JS/assets/122356573/5128d7fd-f278-4362-980e-5fcf99e8cb89)
 
 Interactive web application is a classic memory matching game where the goal is to find and match pairs of identical blocks. Test and improve your memory skills by uncovering and matching all pairs within the least number of moves and in the shortest time possible.
 
