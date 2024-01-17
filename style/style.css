@@ -8,7 +8,10 @@
 }
 
 body {
-    background-color: #495464;
+    background: url('../img/memorygamebg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,14 +22,14 @@ body {
     box-sizing: content-box;
     width: 15em;
     padding: 2.5em 3em;
-    background-color: #F4F4F2;
+    backdrop-filter: blur(30px);
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     border-radius: 0.6em;
     box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
-    
+
 }
 
 .game-container {
@@ -42,7 +45,7 @@ body {
     margin-bottom: 1.2em;
 }
 
-.stats-container span{
+.stats-container span {
     font-weight: 600;
 }
 
@@ -53,7 +56,7 @@ img {
 .card-container {
     position: relative;
     width: 4em;
-    height:4em;
+    height: 4em;
     cursor: pointer;
 }
 
@@ -72,14 +75,15 @@ img {
 }
 
 .card-before {
-    background-color: #495464;
-    color: white;
-    font-size: 2.8em;
+    backdrop-filter: blur(20px);
+    color: transparent;
+    font-size: 3em;
     font-weight: 600;
+    -webkit-text-stroke: .1px #ffffff;
 }
 
 .card-after {
-    background-color: #F4F4F2;
+    backdrop-filter: blur(20px);
     transform: rotateY(180deg);
 }
 
@@ -99,8 +103,19 @@ img {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #495464;
+    background: url('../img/memorygameleft.png');
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
+    background-position: center;
+    background-size: 85em;
     top: 0;
+}
+
+.controls-container h1 {
+    font-size: 80px;
+    padding-bottom: 20px;
+    color: #fff;
+    -webkit-text-stroke: 2px #055d8b;
 }
 
 button {
@@ -139,4 +154,42 @@ button {
 #result h4 {
     font-size: 1.8em;
     margin: 0.6em 0 1em 0;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 100%;
+        height: 89.5vh;
+        max-width: 50em;
+        background: transparent;
+    }
+
+    .game-container {
+        position: relative;
+        width: 100%;
+        display: grid;
+        gap: 5em;
+        right: 10px;
+        top: 0px;
+    }
+
+    .card-before {
+        font-size: 5em;
+    }
+
+    .card-before,
+    .card-after {
+        width: 130px;
+        height: 130px;
+    }
+    
+
+    .stats-container {
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    #stop {
+        margin-top: 100px;
+    }
 }
